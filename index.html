@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>宏观经济学 · 九至十四章刷题</title>
+<link rel="stylesheet" href="css/style.css?v=1">
+</head>
+<body>
+<header class="topbar">
+  <div class="topbar-inner">
+    <a class="brand" href="#" data-nav="home">
+      <span class="brand-mark">宏</span>
+      <span class="brand-text">九至十四章刷题<span class="brand-sub">《西方经济学》（第二版）下册 · 下篇 宏观经济学</span></span>
+    </a>
+    <nav class="topnav">
+      <button class="nav-btn" data-nav="home">章节练习</button>
+      <button class="nav-btn" data-nav="mock">模考</button>
+      <button class="nav-btn" data-nav="history">历史记录</button>
+    </nav>
+  </div>
+</header>
+
+<main id="view-home" class="view">
+  <section class="hero">
+    <h1>宏观经济学 · 九至十四章章节刷题</h1>
+    <p>按章练习即答即判 · 附答案解析 · 模考整卷判分 · 错题可回顾 · 配套考点讲义 <a href="https://link-keng.github.io/macro-econ-notes/" target="_blank" rel="noopener">在此</a></p>
+    <div class="hero-stats" id="hero-stats"></div>
+  </section>
+
+  <section class="subject-block" id="subject-宏观经济学">
+    <div class="subject-head">
+      <div class="subject-title">
+        <span class="subject-icon icon-blue">宏</span>
+        <div>
+          <h2>宏观经济学（下册 第九—十四章）</h2>
+          <p class="subject-sub">每章 单选 15 题 + 判断 8 题 · 每题 1 分 · 即答即判 · 附答案解析</p>
+        </div>
+      </div>
+    </div>
+    <div class="set-grid" id="grid-宏观经济学"></div>
+  </section>
+</main>
+
+<main id="view-exam" class="view" hidden>
+  <div class="exam-head">
+    <button class="btn btn-ghost" id="exam-exit">← 退出</button>
+    <div class="exam-meta">
+      <div class="exam-title" id="exam-title"></div>
+      <div class="exam-progress-row">
+        <div class="progress"><div class="progress-bar" id="exam-bar"></div></div>
+        <span class="exam-progress-text" id="exam-progress-text"></span>
+      </div>
+    </div>
+    <button class="btn btn-danger" id="exam-submit">提前交卷</button>
+  </div>
+  <div class="exam-score-strip" id="exam-score-strip"></div>
+  <div class="exam-body">
+    <div class="q-card" id="q-card"></div>
+    <div class="sheet-box">
+      <button class="sheet-toggle" id="sheet-toggle" type="button">展开答题卡</button>
+      <div class="sheet-grid" id="sheet-grid" hidden></div>
+    </div>
+  </div>
+</main>
+
+<main id="view-history" class="view" hidden>
+  <section class="hero hero-small">
+    <h1>历史记录</h1>
+    <p>每次练习的成绩都保存在本机浏览器中，点击可回顾每一道题</p>
+    <div class="history-tools">
+      <button class="btn" id="history-clear">清空全部记录</button>
+    </div>
+  </section>
+  <div id="history-list" class="history-list"></div>
+</main>
+
+<main id="view-result" class="view" hidden>
+  <section class="result-card">
+    <div class="result-score" id="result-score"></div>
+    <div class="result-title" id="result-title"></div>
+    <div class="result-breakdown" id="result-breakdown"></div>
+    <div class="result-wrong" id="result-wrong"></div>
+    <div class="result-actions">
+      <button class="btn btn-primary" id="result-review">查看错题回顾</button>
+      <button class="btn" id="result-home">返回首页</button>
+    </div>
+  </section>
+</main>
+
+<main id="view-review" class="view" hidden>
+  <div class="exam-head">
+    <button class="btn btn-ghost" id="review-back">← 返回历史</button>
+    <div class="exam-meta">
+      <div class="exam-title" id="review-title"></div>
+    </div>
+    <button class="btn btn-primary" id="review-again">再做一次</button>
+  </div>
+  <div class="review-summary" id="review-summary"></div>
+  <div class="review-body" id="review-body"></div>
+</main>
+
+<main id="view-mock" class="view" hidden>
+  <section class="hero hero-small">
+    <h1>模考板块</h1>
+    <p>从六章题库随机抽题组卷：单选 20 题 + 判断 10 题 · 交卷后统一判分 · 作答过程中不显示答案 · 成绩存入历史记录可回顾</p>
+  </section>
+  <div class="mock-list" id="mock-list"></div>
+</main>
+
+<footer class="footer">题库来源：《西方经济学》（第二版）下册 第九—十四章考点讲义整理 · 仅供学习参考</footer>
+
+<script src="js/app.js?v=1"></script>
+</body>
+</html>
